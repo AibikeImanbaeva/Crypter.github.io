@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypter</title>
+    <link rel="stylesheet" href="/src/css/style.min.css" />
+  </head>
+  <body>
+    <div class="promo">
+      <div class="container">
+        <header>
+          <!-- <div class="container"> -->
+          <nav class="header__nav">
+            <div class="header__nav__logo">
+              <img
+                src="/src/icons/homePage/logo.svg"
+                alt="logo"
+                class="header__nav__logo__img"
+              />
+            </div>
+            <ul class="header__nav__menu">
+              <li><a href="#" class="header__nav__menu__link">Discover</a></li>
+              <li>
+                <a href="#" class="header__nav__menu__link link__grey"
+                  >How it work</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__items">
+            <input
+              type="search"
+              class="header__items__search"
+              placeholder="Search"
+            />
+            <div class="header__items__bell">
+              <img src="/src/icons/homePage/bell.svg" alt="bell" />
+            </div>
+            <input type="submit" class="header__items__upload" value="Upload" />
+            <input
+              type="submit"
+              class="header__items__connect"
+              value="Connect Wallet"
+            />
+          </div>
+          <!-- </div> -->
+        </header>
+        <div class="promo__subtitle">
+          Create, explore, & collect digital art NFTs.
+        </div>
+        <h1 class="title promo__title">The new creative economy.</h1>
+        <input
+          type="button"
+          class="promo__btn__start"
+          value="Start your search"
+        />
+      </div>
+    </div>
+    <section class="about">
+      <div class="container about__wrapper">
+        <div class="about__img">
+          <img
+            srcset="
+              /src/img/homePage/woman-art-tab.jpg 520w,
+              src/img/homePage/woman-art-mob.jpg  310w
+            "
+            sizes="
+            (max-width: 1024px) 520px,
+            (max-width:375px) 310px
+            "
+            src="/src/img/homePage/woman_art.jpg"
+            alt="art"
+          />
+        </div>
+        <div class="about_result">
+          <div class="about__result__title">the creator network®</div>
+          <div class="about__result__creator">
+            <div class="creator__bio">
+              <div class="creator__bio__img">
+                <img src="/src/img/homePage/user.png" alt="user" />
+              </div>
+              <div class="creator__bio__inf">
+                <h2 class="creator__bio__inf__desc">Creator</h2>
+                <h2 class="creator__bio__inf__info">Enrico Cole</h2>
+              </div>
+            </div>
+            <div class="creator__bio">
+              <div class="creator__bio__img">
+                <img src="/src/img/homePage/user_green.png" alt="user" />
+              </div>
+              <div class="creator__bio__inf">
+                <h2 class="creator__bio__inf__desc">Instant price</h2>
+                <h2 class="creator__bio__inf__info">3.5 ETH</h2>
+              </div>
+            </div>
+          </div>
+          <div class="about__result__bid">
+            <h2 class="about__result__bid__title">Current Bid</h2>
+            <h2 class="about__result__bid__subtitle">1.00 ETH</h2>
+            <h2 class="about__result__bid__price">$3,618.36</h2>
+            <div class="about__result__bid__auction">
+              <h2 class="about__result__bid__auction__title">
+                Auction ending in
+              </h2>
+              <div class="about__result__bid__auction__times">
+                <div class="about__result__bid__auction__times time">
+                  19
+                  <span class="time_span">Hrs</span>
+                </div>
+                <div class="about__result__bid__auction__times time">
+                  24
+                  <span class="time_span">mins</span>
+                </div>
+                <div class="about__result__bid__auction__times time">
+                  19
+                  <span class="time_span">secs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <input
+            type="button"
+            class="about_result__btn place_bid"
+            value="Place a bid"
+          />
+          <input type="button" class="about_result__btn" value="View item" />
+          <div class="about__result__arrows">
+            <div class="about__result__arrows__right"></div>
+            <div class="about__result__arrows__left"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="future">
+      <div class="container">
+        <div class="future__posts">
+          <div class="future__posts__main_post">
+            <img
+              srcset="
+              /src/img/homePage/future_main_tab.jpg 430w
+              src/img/homePage/future_main_mob.jpg  320w
+            "
+              sizes="
+            (max-width: 1024px) 427px,
+            (max-width:375px) 320px
+            "
+              src="/src/img/homePage/future_main_deks.jpg"
+              alt="nft-pic"
+              class="future__posts__main_post__pic"
+            />
+            <div class="future__posts__main_post__footer creator__bio">
+              <div class="creator__bio__img">
+                <img src="/src/img/homePage/user.png" alt="user" />
+              </div>
+              <div class="creator__bio__inf">
+                <h2 class="creator__bio__inf__desc">The future of ETH®</h2>
+                <h2 class="creator__bio__inf__info">18 in stock</h2>
+              </div>
+              <div class="future__posts__main_post__footer__highest">
+                <h2>Highest bid</h2>
+                <input type="button" value="1.125 ETH" />
+              </div>
+            </div>
+          </div>
+          <div class="future__posts__details">
+            <div class="future__posts__details__cards">
+              <div class="future__posts__details__cards__img">
+                <img src="/src/img/homePage/future_first.jpg" alt="art" />
+              </div>
+              <div class="future__posts__details__cards__info">
+                <h2 class="cards__info__title">ETH never die</h2>
+                <div class="cards__info__blocks">
+                  <img
+                    src="/src/icons/homePage/avatar.jpg"
+                    alt=""
+                    class="cards__info__user"
+                  /><input
+                    type="button"
+                    value="0.27 ETH"
+                    class="cards__info__inp"
+                  />
+                  <h2 class="cards__info__count">1 of 12</h2>
+                </div>
+                <input
+                  type="button"
+                  value="Place a bid"
+                  class="cards__info__btn"
+                />
+              </div>
+            </div>
+            <div class="future__posts__details__cards">
+              <div class="future__posts__details__cards__img">
+                <img src="/src/img/homePage/future_sec.jpg" alt="art" />
+              </div>
+              <div class="future__posts__details__cards__info">
+                <h2 class="cards__info__title">Future coming soon</h2>
+                <div class="cards__info__blocks">
+                  <img
+                    src="/src/icons/homePage/avatar_yellow.jpg"
+                    alt=""
+                    class="cards__info__user"
+                  /><input
+                    type="button"
+                    value="0.27 ETH"
+                    class="cards__info__inp"
+                  />
+                  <h2 class="cards__info__count">1 of 3</h2>
+                </div>
+                <input
+                  type="button"
+                  value="Place a bid"
+                  class="cards__info_grey_btn"
+                />
+              </div>
+            </div>
+            <div class="future__posts__details__cards">
+              <div class="future__posts__details__cards__img">
+                <img src="/src/img/homePage/future_third.jpg" alt="art" />
+              </div>
+              <div class="future__posts__details__cards__info">
+                <h2 class="cards__info__title">
+                  Elon Musk silver coin 3d print
+                </h2>
+                <div class="cards__info__blocks">
+                  <img
+                    src="/src/icons/homePage/avatar.jpg"
+                    alt=""
+                    class="cards__info__user"
+                  /><input
+                    type="button"
+                    value="0.27 ETH"
+                    class="cards__info__inp"
+                  />
+                  <h2 class="cards__info__count">1 of 4</h2>
+                </div>
+                <input
+                  type="button"
+                  value="Place a bid"
+                  class="cards__info__btn"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="future__posts__creators">
+            <h2 class="future__posts__creators__users__title">
+              Latest upload from creators 🔥
+            </h2>
+            <div class="future__posts__creators__users">
+              <div class="creator__bio">
+                <div class="creator__bio__img">
+                  <img
+                    src="/src/img/homePage/future_section/06.png"
+                    alt="user"
+                  />
+                </div>
+                <div class="creator__bio__inf">
+                  <h2 class="creator__bio__inf__desc">Payton Harris</h2>
+                  <h2 class="creator__bio__inf__info">
+                    2.456
+                    <span> ETH </span>
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="future__posts__creators__users">
+              <div class="creator__bio">
+                <div class="creator__bio__img">
+                  <img
+                    src="/src/img/homePage/future_section/02.png"
+                    alt="user"
+                  />
+                </div>
+                <div class="creator__bio__inf">
+                  <h2 class="creator__bio__inf__desc">Payton Harris</h2>
+                  <h2 class="creator__bio__inf__info">
+                    2.456 <span> ETH </span>
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="future__posts__creators__users">
+              <div class="creator__bio">
+                <div class="creator__bio__img">
+                  <img
+                    src="/src/img/homePage/future_section/03.jpg"
+                    alt="user"
+                  />
+                </div>
+                <div class="creator__bio__inf">
+                  <h2 class="creator__bio__inf__desc">Payton Harris</h2>
+                  <h2 class="creator__bio__inf__info">
+                    2.456 <span> ETH </span>
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="future__posts__creators__users">
+              <div class="creator__bio">
+                <div class="creator__bio__img">
+                  <img
+                    src="/src/img/homePage/future_section/04.png"
+                    alt="user"
+                  />
+                </div>
+                <div class="creator__bio__inf">
+                  <h2 class="creator__bio__inf__desc">Payton Harris</h2>
+                  <h2 class="creator__bio__inf__info">
+                    2.456 <span> ETH </span>
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <input
+              type="button"
+              class="future__posts__creators__discoverMore"
+              value="Discover more"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- _______________________________________________________________--->
+
+    <section class="sellers">
+      <div class="container">
+        <div class="sellers_header">
+          <div class="sellers_header__title">
+            Popular <br />
+            <span> Sellers </span>
+            <img
+              src="./src/img/homePage/sellers_section/Shape.svg"
+              alt=""
+              class="sellers_header__arrow"
+            />
+          </div>
+          <div class="sellers_header__data">
+            <h2>Today</h2>
+
+            <img
+              src="/src/img/homePage/sellers_section/small.svg"
+              alt=""
+              class="sellers_header__data__img"
+            />
+          </div>
+        </div>
+        <div class="sellers_content">
+          <div class="sellers_arrow_right">
+            <img
+              src="/src/img/homePage/sellers_section/arrow.svg"
+              alt=""
+              class="sellers_arrow__img"
+            />
+          </div>
+          <div class="sellers_content__cards">
+            <div class="sellers_content__cards__top">
+              <img
+                src="/src/img/homePage/sellers_section/badge.png"
+                alt=""
+                class="sellers_num"
+              />
+              <img
+                src="/src/img/homePage/sellers_section/Line.svg"
+                alt=""
+                class="sellers_plus"
+              />
+              <img
+                src="./src/img/homePage/sellers_section/vector (Stroke).svg"
+                alt=""
+              />
+            </div>
+            <div class="sellers_content__border"></div>
+
+            <div class="sellers_content__cards__user">
+              <img
+                src="/src/img/homePage/sellers_section/user.png"
+                alt=""
+                class="sellers_content__cards__user__img"
+              />
+              <div class="creator__bio__inf">
+                <h2 class="creator__bio__inf__desc">Payton Harris</h2>
+                <h2 class="creator__bio__inf__info">
+                  2.456 <span> ETH </span>
+                </h2>
+              </div>
+            </div>
+          </div>
+          <!-- ----------------------------------------------- -->
+          <div class="sellers_content__cards">
+            <div class="sellers_content__cards__top">
+              <img
+                src="/src/img/homePage/sellers_section/badge02.png"
+                class="sellers_num"
+                alt=""
+              />
+              <img
+                src="/src/img/homePage/sellers_section/Line.svg"
+                alt=""
+                class="sellers_plus"
+              />
+              <img
+                src="./src/img/homePage/sellers_section/vector (Stroke).svg"
+                alt=""
+              />
+            </div>
+            <div class="sellers_content__border"></div>
+            <div class="sellers_content__cards__user">
+              <img
+                src="/src/img/homePage/sellers_section/user02.png"
+                alt=""
+                class="sellers_content__cards__user__img"
+                style="width: 69px; height: 70px"
+              />
+              <div class="creator__bio__inf">
+                <h2 class="creator__bio__inf__desc">Edd Harris</h2>
+                <h2 class="creator__bio__inf__info">
+                  2.456 <span> ETH </span>
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="sellers_content__cards">
+            <div class="sellers_content__cards__top">
+              <img
+                src="/src/img/homePage/sellers_section/badge03.png"
+                alt=""
+                class="sellers_num"
+              />
+              <img
+                src="/src/img/homePage/sellers_section/Line.svg"
+                alt=""
+                class="sellers_plus"
+              />
+              <img
+                src="./src/img/homePage/sellers_section/vector (Stroke).svg"
+                alt=""
+              />
+            </div>
+            <div class="sellers_content__border"></div>
+            <div class="sellers_content__cards__user">
+              <img
+                src="/src/img/homePage/sellers_section/user03.png"
+                alt=""
+                class="sellers_content__cards__user__img"
+              />
+              <div class="creator__bio__inf">
+                <h2 class="creator__bio__inf__desc">Odell Hane</h2>
+                <h2 class="creator__bio__inf__info">
+                  2.456 <span> ETH </span>
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="sellers_content__cards">
+            <div class="sellers_content__cards__top">
+              <img
+                src="/src/img/homePage/sellers_section/badge04.png"
+                alt=""
+                class="sellers_num"
+              />
+              <img
+                src="/src/img/homePage/sellers_section/Line.svg"
+                alt=""
+                class="sellers_plus"
+              />
+              <img
+                src="./src/img/homePage/sellers_section/vector (Stroke).svg"
+                alt=""
+              />
+            </div>
+            <!-- _______________________________________________________________- -->
+            <div class="sellers_content__border"></div>
+            <div class="sellers_content__cards__user">
+              <img
+                src="/src/img/homePage/sellers_section/user04.png"
+                alt=""
+                class="sellers_content__cards__user__img"
+              />
+              <div class="creator__bio__inf">
+                <h2 class="creator__bio__inf__desc">Marlee Kuphal</h2>
+                <h2 class="creator__bio__inf__info">
+                  2.456 <span> ETH </span>
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="sellers_content__cards">
+            <div class="sellers_content__cards__top">
+              <img
+                src="/src/img/homePage/sellers_section/badge05.png"
+                alt=""
+                class="sellers_num"
+              />
+              <img
+                src="/src/img/homePage/sellers_section/Line.svg"
+                alt=""
+                class="sellers_plus"
+              />
+              <img
+                src="./src/img/homePage/sellers_section/vector (Stroke).svg"
+                alt=""
+              />
+            </div>
+            <div class="sellers_content__border"></div>
+            <div class="sellers_content__cards__user">
+              <img
+                src="/src/img/homePage/sellers_section/user05.png"
+                alt=""
+                class="sellers_content__cards__user__img"
+              />
+              <div class="creator__bio__inf">
+                <h2 class="creator__bio__inf__desc">Payton Buckridge</h2>
+                <h2 class="creator__bio__inf__info">
+                  2.456 <span> ETH </span>
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="sellers_arrow_left">
+            <img
+              src="/src/img/homePage/sellers_section/arrow.svg"
+              alt=""
+              class="sellers_arrow__img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
