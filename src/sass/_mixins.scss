@@ -1,0 +1,56 @@
+@mixin grey_border_btn {
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 14px;
+    border: 2px solid #e6e8ec;
+    border-radius: 90px;
+    background-color: #fcfcfd;
+}
+
+@mixin black_subtitle{
+    color:$black-color;
+    font-size: 1rem;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+}
+
+@mixin grey_500_subtitle{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 1rem;
+color: $grey-color;
+}
+@mixin grey_400_subtitle{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 0.75rem;
+color: $grey-color;
+}
+
+@mixin  green_price_btn {
+    height: 26px;
+    border: 2px solid #45b36b;
+    border-radius: 4px;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: .75rem;
+    text-transform: uppercase;
+    color: #45b36b;
+    background-color: #fcfcfd;
+    width: 4.125rem;
+}
+
+@mixin place_bid_btn{
+    width: 6.125rem;
+height: 32px;
+border: 2px solid #E6E8EC;
+border-radius: 90px;
+font-family: 'DM Sans';
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+color: #23262F;
+}
