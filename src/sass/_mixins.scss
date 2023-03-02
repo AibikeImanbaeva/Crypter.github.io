@@ -124,3 +124,15 @@ color: #23262F;
       }
    
 }
+
+
+@mixin blue_btn {
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 14px;
+
+    border-radius: 90px;
+    border-style: none;
+    color: #fcfcfd;
+    background-color: $blue-color;
+}

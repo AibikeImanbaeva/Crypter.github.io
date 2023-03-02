@@ -795,3 +795,45 @@ margin-bottom: 2rem;
     }
 }
 
+
+.pyramid{
+  min-height: 800px;
+  padding: 256px 0 256px 0;
+  background: url("/src/img/homePage/pyramid-section/img.jpg") no-repeat 87% 57%;
+  &_content{
+    width: 45%;
+  
+    &__titles{
+      .pyramid_short_title{
+        @include grey_500_subtitle;
+        font-weight: 700;
+        font-size: 1rem;
+        margin-bottom: 0.7rem;
+      }
+      .pyramid_main_title{
+        @include black_title;
+        font-size: 4rem;
+       
+      }
+      span{
+        @include grey_400_subtitle;
+        font-size: 1rem;
+        margin-top: 1.2rem;
+      }
+      margin-bottom: 2.5rem;
+    }
+    &__btns{
+      &__earn_now{
+        @include blue_btn;
+        width: 7.5rem;
+        height: 3rem;
+      }
+      &__discover_more{
+        @include grey_border_btn;
+        height: 3rem;
+        width: 10rem;
+      }
+    }
+  }
+  
+}
