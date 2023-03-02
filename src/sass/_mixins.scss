@@ -54,3 +54,10 @@ font-size: 14px;
 line-height: 16px;
 color: #23262F;
 }
+
+@mixin black_title{
+    font-family: 'DM Sans';
+font-weight: 700;
+font-size: 2.5rem;
+color: #23262F;
+}

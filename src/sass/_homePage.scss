@@ -515,3 +515,86 @@ header {
     }
   }
 }
+
+.hot_bid {
+  min-height: 826px;
+  background: #fcfcfd;
+  padding-top: 136px;
+  padding-bottom: 128px;
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
+    &__title {
+      @include black_title;
+    }
+    &__transit {
+      width: 8%;
+      &__arrows {
+        width: 40px;
+        height: 40px;
+        &:hover {
+          border: 2px solid #e6e8ec;
+          border-radius: 40px;
+        }
+      }
+    }
+  }
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    &__card{
+      display: flex;
+      flex-direction: column;
+      &__footer{
+        border-top: 1px solid #E6E8EC;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 12px;
+        padding-top: 12px;
+        
+      &__right{
+        @include grey_400_subtitle;
+        font-size: 12px;
+        align-self: center;
+        span{
+          @include black_subtitle;
+          font-weight: 600;
+          font-size: 12px;
+         align-self: center;
+        }
+
+      }
+      &_left{
+        @include grey_400_subtitle;
+        margin-top: 6px;
+      }
+      }
+      &__img{
+        border-radius: 16px;
+
+      }
+      &__desc{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 21px;
+        margin-bottom: 13px;
+        @include black_subtitle;
+        .grey-input{
+          @include green_price_btn
+        }
+      }
+      &__users{
+        display: flex;
+        justify-content: space-between;
+        .hot-bid__title{
+          @include black_subtitle
+        }
+        margin-top: 12px;
+      }
+     
+    }
+  }
+}
