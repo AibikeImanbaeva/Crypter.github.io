@@ -61,3 +61,66 @@ font-weight: 700;
 font-size: 2.5rem;
 color: #23262F;
 }
+
+
+@mixin header__data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fcfcfd;
+    border: 2px solid #e6e8ec;
+    border-radius: 12px;
+    padding-right: 8px;
+    padding-left: 16px;
+}
+
+@mixin crypt-card{
+    display: flex;
+      flex-direction: column;
+      &__footer {
+        border-top: 1px solid #e6e8ec;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 12px;
+        padding-top: 12px;
+
+        &__right {
+          @include grey_400_subtitle;
+          font-size: 12px;
+          align-self: center;
+          span {
+            @include black_subtitle;
+            font-weight: 600;
+            font-size: 12px;
+            align-self: center;
+          }
+        }
+        &_left {
+          @include grey_400_subtitle;
+          margin-top: 6px;
+        }
+      }
+      &__img {
+        border-radius: 16px;
+      }
+      &__desc {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 21px;
+        margin-bottom: 13px;
+        @include black_subtitle;
+        .grey-input {
+          @include green_price_btn;
+        }
+      }
+      &__users {
+        display: flex;
+        justify-content: space-between;
+        .hot-bid__title {
+          @include black_subtitle;
+        }
+        margin-top: 12px;
+      }
+   
+}
