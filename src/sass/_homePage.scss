@@ -31,14 +31,33 @@ header {
   grid-template: 80px / 32% 51%;
   column-gap: 17%;
   align-items: center;
+  .line {
+    width: 1px;
+    background: black;
+  }
   .header__nav {
     display: grid;
-    grid-template: 40px / repeat(2, 1fr);
+
     column-gap: 32px;
     align-items: center;
+    width: 352px;
+    grid-template: 1fr 1px 2fr;
+    grid-template-columns: 126px 1px auto;
+    .line {
+      width: 2px;
+      height: 40px;
+
+      background: #e6e8ec;
+      border-radius: 2px;
+    }
     &__logo {
-      width: 126px;
-      height: 50px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      color: #23262f;
+      display: flex;
+
       img {
         width: 100%;
       }
@@ -77,7 +96,7 @@ header {
       font-weight: 400;
       font-size: 12px;
       color: #777e91;
-      background: url(../icons/search.svg) no-repeat 98%;
+      background: url("/src/icons/homePage/search.svg") no-repeat 98%;
     }
     &__upload {
       font-family: "DM Sans";
@@ -88,6 +107,8 @@ header {
       border-style: none;
       color: #fcfcfd;
       background-color: $blue-color;
+      padding: 13.5px;
+      margin-right: 0.7rem;
     }
     &__connect {
       font-family: "DM Sans";
@@ -97,6 +118,7 @@ header {
       border: 2px solid #e6e8ec;
       border-radius: 90px;
       background-color: #fcfcfd;
+      padding: 12px;
     }
   }
 }

@@ -1,0 +1,112 @@
+.header_upload__wallet {
+  background: url(/src/img/uploadPage/01.png) no-repeat 2%;
+  @include grey_border_btn;
+  width: 147px;
+  height: 40px;
+  font-size: 0.8rem;
+  padding-left: 39px;
+  padding-top: 10px;
+  .upload_price {
+    color: #45b26b;
+  }
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: $light-grey-color;
+}
+.upload_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.upload_menu {
+  min-height: 88px;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0 24px 0;
+  align-items: center;
+  &__backHome {
+    @include grey_border_btn;
+    width: 153px;
+    height: 40px;
+    padding: 8px 16px 12px 40px;
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 14px;
+    color: #23262f;
+    background: url(/src/icons/uploadPage/arrowleft.svg) no-repeat 12% 46%;
+  }
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+    width: 17%;
+    &__home {
+      @include grey_400_subtitle;
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+    &__uploadItem {
+      @include grey_400_subtitle;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: $black-color;
+    }
+  }
+}
+
+.upload_item {
+  min-height: 830px;
+  padding: 80px 0 136px 0;
+  &__title {
+    @include black_title;
+    text-align: center;
+  }
+  &__text {
+    @include grey_400_subtitle;
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    text-align: center;
+    span {
+      color: $black-color;
+    }
+  }
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 80px;
+
+    &__post {
+      display: flex;
+      flex-direction: column;
+      width: 352px;
+      height: 360px;
+      border: 1px solid #e6e8ec;
+      border-radius: 16px;
+      padding: 1rem 1rem 1.5rem 1rem;
+      .upload_post__btn {
+        @include grey_border_btn;
+        width: 7.6rem;
+        height: 40px;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+       text-align: center;
+       padding-top: 3%;
+      }
+      .upload_multiple_btn{
+        background: #3772FF;
+        color: #fcfcfd;
+      }
+    }
+  }
+  &__desc{
+    margin-top: 2rem;
+    @include grey_400_subtitle;
+    text-align: center;
+  }
+}
