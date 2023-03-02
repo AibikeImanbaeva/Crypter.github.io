@@ -1,0 +1,73 @@
+.wallet {
+  min-height: 970px;
+  background: #fcfcfd;
+  padding: 64px 0 112px 0;
+  border-bottom: 1px solid #E6E8EC;
+  &_head {
+    display: flex;
+    padding-bottom: 2.5rem;
+ border-bottom: 2px solid #E6E8EC;;
+    .wallet_main_title {
+      @include black_title;
+      margin-left: 1rem;
+    }
+    margin-bottom: 2.5rem;
+  }
+  &_content {
+    display: flex;
+    justify-content: space-between;
+    &_list {
+      display: flex;
+      flex-direction: column;
+      width: 34%;
+
+      &__items {
+        display: flex;
+        @include black_subtitle;
+        font-weight: 600;
+        font-size: 1.5rem;
+        height: 128px;
+        align-items: center;
+        &:hover {
+          border: 2px solid #e6e8ec;
+          border-radius: 16px;
+        }
+        .wallet_list_item {
+          padding: 32px;
+        }
+      }
+    }
+    &_scan {
+      width: 37%;
+      &__head {
+        @include black_title;
+        font-size: 2rem;
+        .scan__head_subtitle {
+          @include grey_400_subtitle;
+        }
+        margin-bottom: 1.5rem;
+      }
+      &__block {
+        width: 100%;
+        height: 448px;
+        background: #f4f5f6;
+        border-radius: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        .scan_img {
+          margin-top: 5rem;
+        }
+      }
+      .wallet_content__btn {
+        @include grey_border_btn;
+        width: 47%;
+        height: 52px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

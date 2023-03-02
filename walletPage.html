@@ -1,12 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="/src/css/style.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <!-- <div class="container"> -->
+        <nav class="header__nav">
+          <div class="header__nav__logo">
+            <img
+              src="/src/icons/homePage/logo.svg"
+              alt="logo"
+              class="header__nav__logo__img"
+            />
+          </div>
+          <div class="line"></div>
+          <ul class="header__nav__menu">
+            <li><a href="#" class="header__nav__menu__link">Discover</a></li>
+            <li>
+              <a href="#" class="header__nav__menu__link link__grey"
+                >How it work</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__items">
+          <input
+            type="search"
+            class="header__items__search"
+            placeholder="Search"
+          />
+          <div class="header__items__bell">
+            <img src="/src/icons/homePage/bell.svg" alt="bell" />
+          </div>
+          <a href="/upload.html" class="header__items__upload">Upload</a>
+          <!-- <input type="submit" class="header__items__upload" value="Upload" /> -->
+          <a href="/walletPage.html" class="header__items__connect"
+            >Connect Wallet</a
+          >
+          <!-- <input
+                type="submit"
+                class="header__items__connect"
+                value="Connect Wallet"
+              /> -->
+        </div>
+        <!-- </div> -->
+      </header>
+    </div>
+    <section class="wallet">
+      <div class="container">
+        <div class="wallet_head">
+          <img
+            src="/src/icons/walletPage/arrow.svg"
+            alt="arrow"
+            class="wallet_arrowBack"
+          />
+          <h2 class="wallet_main_title">Connect your wallet</h2>
+        </div>
+        <div class="wallet_content">
+          <div class="wallet_content_list">
+            <div class="wallet_content_list__items">
+              <img
+                src="/src/icons/walletPage/icon.svg"
+                alt=""
+                class="wallet_list_item"
+              />
+              Formatic
+            </div>
+            <div class="wallet_content_list__items">
+              <img
+                src="/src/icons/walletPage/02.svg"
+                alt=""
+                class="wallet_list_item"
+              />
+              Coinbase Wallet
+            </div>
+            <div class="wallet_content_list__items">
+              <img
+                src="/src/icons/walletPage/03.svg"
+                alt=""
+                class="wallet_list_item"
+              />MyEtherWallet
+            </div>
+            <div class="wallet_content_list__items">
+              <img
+                src="/src/icons/walletPage/04.svg"
+                alt=""
+                class="wallet_list_item"
+              />Wallet Connect
+            </div>
+          </div>
+          <div class="wallet_content_scan">
+            <div class="wallet_content_scan__head">
+              Scan to connect <br />
+              <span class="scan__head_subtitle">Powered by UI8.Wallet</span>
+            </div>
+            <div class="wallet_content_scan__block">
+              <img src="/src/img/walletPage/scan.svg" alt="" class="scan_img" />
+            </div>
+            <a href="#" class="wallet_content__btn">Don’t have a wallet app?</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_top">
+          <div class="footer_top__info_col">
+            <img src="/src/icons/homePage/logo.svg" alt="" class="logo" />
+            <h2 class="footer_top__info_col__title main_title">
+              The New Creative <br />
+              Economy.
+            </h2>
+            <ul class="footer_top__info_col__menu">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="footer_top__info_col">
+            <h2 class="footer_top__info_col__title">Crypter.</h2>
+            <ul class="footer_top__info_col__menu">
+              <li>Discover</li>
+              <li>Connect wallet</li>
+              <li>Create item</li>
+            </ul>
+          </div>
+          <div class="footer_top__info_col">
+            <h2 class="footer_top__info_col__title">Info</h2>
+            <ul class="footer_top__info_col__menu">
+              <li>Download</li>
+              <li>Demos</li>
+              <li>Support</li>
+            </ul>
+          </div>
+          <div class="footer_top__info_col footer_email_block">
+            <h2 class="footer_top__info_col__title">Join Newsletter</h2>
+            <h2 class="footer_top__info_col__title footer_subscribe">
+              Subscribe our newsletter to get more free design course and
+              resource
+            </h2>
+            <input
+              type="text"
+              class="footer_top__info_col__inp"
+              value="Enter your email"
+            />
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <h2 class="footer_bottom__text">
+            Copyright © 2021 UI8 LLC. All rights reserved
+          </h2>
+          <h2 class="footer_bottom__text footer__text__right">
+            We use cookies for better service.
+            <span class="footer_bottom__text__accept">Accept</span>
+          </h2>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
