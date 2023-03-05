@@ -613,6 +613,7 @@ header {
         justify-content: space-between;
         .hot-bid__title {
           @include black_subtitle;
+          font-size: 0.8rem;
         }
         margin-top: 12px;
       }

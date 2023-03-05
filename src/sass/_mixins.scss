@@ -125,14 +125,47 @@ color: #23262F;
    
 }
 
-
-@mixin blue_btn {
-    font-family: "DM Sans";
-    font-weight: 700;
-    font-size: 14px;
-
-    border-radius: 90px;
-    border-style: none;
-    color: #fcfcfd;
-    background-color: $blue-color;
+@mixin blue_btn{
+  background: #3772FF;
+border-radius: 90px;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+color: #FCFCFD;
 }
+
+@mixin navbar_menu {
+  &_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__menu {
+      min-width: 60%;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        li{
+          font-family: "DM Sans";
+          font-weight: 700;
+          font-size: 0.8rem;
+          color: #777e91;
+        }
+        .menu__black {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #353945;
+          border-radius: 100px;
+          width: 5.1rem;
+          color: #f4f5f6;
+          height: 28px;
+        }
+      }}
+    }
+    }
+

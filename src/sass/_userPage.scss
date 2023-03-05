@@ -1,0 +1,114 @@
+.userpage {
+  min-height: 1038px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 213px;
+  .profile {
+    height: 689px;
+    width: 23%;
+    border: 1px solid #e6e8ec;
+    box-shadow: 0px 40px 32px -24px rgba(15, 15, 15, 0.12);
+    border-radius: 16px;
+    background: #fcfcfd;
+    &_card {
+      display: flex;
+      flex-direction: column;
+      width: 73%;
+      margin: 2rem auto;
+      &__bio {
+        margin-top: 0.8rem;
+        .bio_name {
+          @include black_subtitle;
+          font-weight: 600;
+          font-size: 1.5rem;
+          text-align: center;
+        }
+        .bio_title {
+          @include black_title;
+          font-size: 0.8rem;
+          text-align: center;
+          margin-top: 4px;
+        }
+        .bio_desc {
+          @include grey_400_subtitle;
+          text-align: center;
+          margin-top: 20px;
+        }
+        .bio_map {
+          @include black_title;
+          font-size: 0.8rem;
+          background: url("../icons/userPage/globe.svg") no-repeat 15%;
+          margin-top: 20px;
+          text-align: center;
+        }
+      }
+    }
+    &_btns {
+      display: flex;
+      justify-content: space-between;
+      width: 72%;
+      margin: 3rem auto;
+    
+      &__follow {
+        @include blue_btn;
+        width: 75px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &__import {
+        @include grey_border_btn;
+        background: url("../icons/userPage/import.svg") no-repeat 54% 50%;
+        width: 40px;
+        height: 40px;
+      }
+      &__group {
+        @include grey_border_btn;
+        background: url("../icons/userPage/groupcomma.svg") no-repeat 54% 50%;
+        width: 40px;
+        height: 40px;
+      }
+    }
+    &_socials {
+      margin: 3rem auto;
+      margin-top: 0;
+      width: 42%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &_line {
+      width: 199px;
+      height: 1px;
+      text-align: center;
+      background: #e6e8ec;
+      margin-bottom: 3rem;
+    }
+    &_data{
+        @include grey_400_subtitle;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+   
+  }
+.user_content{
+  width: 72%;
+  min-height: 746px;
+  padding-top: 180px;
+  margin-bottom: 2rem;
+  @include navbar_menu;
+
+ 
+  .user_cards{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+}
+
+
+.discover_content .crypt-card__users .hot-bid__title{
+  font-size: 0.8rem;
+}
