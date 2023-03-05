@@ -1,0 +1,98 @@
+.get_start {
+  min-height: 1117px;
+  background: #fcfcfd;
+  padding: 80px 0 0 0;
+  &_subtitle {
+    @include grey_500_subtitle;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+  }
+  &_mainTitle {
+    margin-top: 0.7rem;
+    @include black_title;
+  }
+  &_content {
+    margin-top: 7.75rem;
+    display: flex;
+    justify-content: space-between;
+    &__list {
+      display: flex;
+      flex-direction: column;
+      width: 14%;
+      height: 184px;
+      justify-content: space-between;
+      &__item {
+        .get_start__sidebar__img {
+          margin-right: 1rem;
+        }
+        @include grey_500_subtitle;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        &:hover {
+          color: $black_color;
+        }
+        display: flex;
+        align-items: center;
+      }
+    }
+    &__body {
+      width: 66%;
+      display: flex;
+      flex-direction: column;
+      &__blocks {
+        .content {
+          display: none;
+        }
+        .get_start_blocks__header {
+          display: flex;
+          flex-direction: column;
+
+          label {
+            @include black_subtitle;
+            background: url("../icons/getstart-section/Line.svg") no-repeat 99%;
+          }
+          input {
+            // width: 100%;
+            width: 50px;
+            // z-index: -1;
+            height: 24px;
+            // background: url('../icons/getstart-section/Line.svg');
+            border: none;
+            margin-left: 70%;
+
+            &:checked ~ .get_start_content__text {
+              display: block;
+            }
+          }
+          .get_start_content__text {
+            margin-top: 40px;
+            line-height: 24px;
+            display: none;
+            @include grey_400_subtitle;
+            font-size: 1rem;
+            min-height: 120px;
+            &__btn {
+              @include grey_border_btn;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 117px;
+              height: 40px;
+              margin-top: 24px;
+              margin-bottom: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.get_start_content__text__line {
+  width: 100%;
+  height: 1px;
+  background-color: #e6e8ec;
+  margin-bottom: 2rem;
+}
