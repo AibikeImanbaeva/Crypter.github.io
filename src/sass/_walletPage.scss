@@ -2,11 +2,11 @@
   min-height: 970px;
   background: #fcfcfd;
   padding: 64px 0 112px 0;
-  border-bottom: 1px solid #E6E8EC;
+  border-bottom: 1px solid #e6e8ec;
   &_head {
     display: flex;
     padding-bottom: 2.5rem;
- border-bottom: 2px solid #E6E8EC;;
+    border-bottom: 2px solid #e6e8ec;
     .wallet_main_title {
       @include black_title;
       margin-left: 1rem;

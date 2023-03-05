@@ -1,5 +1,5 @@
 .header_upload__wallet {
-  background: url(/src/img/uploadPage/01.png) no-repeat 2%;
+  background: url(/img/uploadPage/01.png) no-repeat 2%;
   @include grey_border_btn;
   width: 147px;
   height: 40px;
@@ -37,7 +37,7 @@
     font-weight: 700;
     font-size: 14px;
     color: #23262f;
-    background: url(/src/icons/uploadPage/arrowleft.svg) no-repeat 12% 46%;
+    background: url(/icons/uploadPage/arrowleft.svg) no-repeat 12% 46%;
   }
   &__btns {
     display: flex;
