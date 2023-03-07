@@ -109,18 +109,7 @@
           .twitter_inp {
             position: relative;
           }
-          .verify {
-            position: absolute;
-            top: 166%;
-            left: 65%;
-            @include black_subtitle;
-            @include grey_border_btn;
-            width: 120px;
-            height: 32px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
+          
           label {
             margin-top: 2rem;
             @include grey_400_subtitle;
