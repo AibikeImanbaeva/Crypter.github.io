@@ -1,0 +1,173 @@
+.edit {
+  min-height: 1129px;
+  margin: 80px 0 136px 0;
+
+  &_title {
+    width: 76%;
+    margin: 0 auto;
+    @include black_title;
+    margin-bottom: 4rem;
+    &__text {
+      margin-top: 1rem;
+
+      @include grey_400_subtitle;
+      span {
+        color: $black-color;
+      }
+    }
+  }
+  &_form {
+    display: flex;
+    justify-content: space-between;
+    width: 76%;
+    margin: 0 auto;
+    &__photo {
+      width: 42%;
+      display: flex;
+      justify-content: space-between;
+      &__avatar {
+        width: 128px;
+        height: 128px;
+      }
+      &__rec {
+        @include grey_500_subtitle;
+        color: $black-color;
+        width: 192px;
+        .edit_form__photo__btn {
+          @include grey_border_btn;
+          width: 80px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 1rem;
+        }
+      }
+    }
+    &__account {
+      width: 48%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      .account_info {
+        display: flex;
+        flex-direction: column;
+        &__title {
+          @include grey_500_subtitle;
+          color: $black-color;
+        }
+        &__forms {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 3rem;
+          label {
+            margin-top: 2rem;
+            @include grey_400_subtitle;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #b1b5c4;
+            margin-bottom: 12px;
+          }
+          input {
+            height: 48px;
+            border: 2px solid #e6e8ec;
+            border-radius: 12px;
+            padding: 2%;
+            @include grey_500_subtitle;
+          }
+          #bio {
+            height: 96px;
+          }
+        }
+      }
+      .social {
+        display: flex;
+        flex-direction: column;
+        &__text {
+          @include grey_400_subtitle;
+          margin: 2.5rem 0 2.5rem 0;
+          font-size: 1rem;
+          line-height: 24px;
+        }
+        &__title {
+          @include grey_500_subtitle;
+          color: $black-color;
+        }
+       
+        .addmore {
+          @include grey_border_btn;
+          width: 230px;
+          height: 40px;
+          color: #777e91;
+          background: url("../icons/editProfile/plus.svg") no-repeat 4%;
+        }
+
+        &__forms {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 3rem;
+          .twitter_inp {
+            position: relative;
+          }
+          .verify {
+            position: absolute;
+            top: 166%;
+            left: 65%;
+            @include black_subtitle;
+            @include grey_border_btn;
+            width: 120px;
+            height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          label {
+            margin-top: 2rem;
+            @include grey_400_subtitle;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #b1b5c4;
+            margin-bottom: 12px;
+          }
+          input {
+            height: 48px;
+            border: 2px solid #e6e8ec;
+            border-radius: 12px;
+            padding: 2%;
+            @include grey_500_subtitle;
+          }
+          #bio {
+            height: 96px;
+          }
+        }
+      }
+      .edit_form__account__btns {
+        display: flex;
+        justify-content: space-between;
+        width: 285px;
+        height: 48px;
+        .update {
+          @include blue_btn;
+          width: 158px;
+          height: 48px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .clear {
+          width: 105px;
+          height: 24px;
+          font-family: 'DM Sans';
+font-weight: 700;
+font-size: 1rem;
+color: #777E91;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 0.8rem;
+background: url("../icons/editProfile/close.svg") no-repeat 1px;
+        }
+      }
+    }
+  }
+}

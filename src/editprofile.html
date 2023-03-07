@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <!-- <div class="container"> -->
+        <nav class="header__nav">
+          <div class="header__nav__logo">
+            <img
+              src="/icons/homePage/logo.svg"
+              alt="logo"
+              class="header__nav__logo__img"
+            />
+          </div>
+          <div class="line"></div>
+          <ul class="header__nav__menu">
+            <li><a href="#" class="header__nav__menu__link">Discover</a></li>
+            <li>
+              <a href="#" class="header__nav__menu__link link__grey"
+                >How it work</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__items">
+          <input
+            type="search"
+            class="header__items__search"
+            placeholder="Search"
+          />
+          <div class="header__items__bell">
+            <img src="/icons/homePage/bell.svg" alt="bell" />
+          </div>
+          <a href="/upload.html" class="header__items__upload">Upload</a>
+          <!-- <input type="submit" class="header__items__upload" value="Upload" /> -->
+          <a href="/userPage.html" class="header_upload__wallet"
+            >7.00698 <span class="upload_price"> ETH </span>
+          </a>
+          <!-- <input
+                type="submit"
+                class="header__items__connect"
+                value="Connect Wallet"
+              /> -->
+        </div>
+        <!-- </div> -->
+      </header>
+    </div>
+    <div class="line"></div>
+    <div class="upload_menu">
+      <div class="container upload_wrapper">
+        <a href="/userPage.html" class="upload_menu__backHome"
+          >Back to profile</a
+        >
+        <div class="upload_menu__btns">
+          <a href="#" class="upload_menu__btns__home">Profile</a>
+          <img
+            src="/icons/uploadPage/Shape.svg"
+            alt="arrow"
+            class="upload_menu__btns__arrow"
+          />
+          <a href="#" class="upload_menu__btns__uploadItem">Edit Profile</a>
+        </div>
+      </div>
+    </div>
+    <div class="line"></div>
+    <section class="edit">
+      <div class="container">
+        <div class="edit_title">
+          Edit profile <br />
+          <h2 class="edit_title__text">
+            You can set preferred display name, create <span>your profile URL</span>  and manage
+            other personal settings.
+          </h2>
+        </div>
+        <div class="edit_form">
+          <div class="edit_form__photo">
+            <img src="./img/editPage/avatar.jpg" alt="avatar" class="edit_form__photo__avatar">
+            <div class="edit_form__photo__rec">
+              Profile photo
+              <h2 class="edit_title__text">
+                We recommend an image
+of at least 400x400.Gifs work too 🙌
+              </h2>
+              <a href="" class="edit_form__photo__btn">Upload</a>
+            </div>
+          </div>
+          <div class="edit_form__account">
+            <div class="account_info">
+              <h2 class="account_info__title edit_form_title">Account info</h2>
+              <form action="" class="account_info__forms">
+                <label for="displayn">display name</label>
+                <input
+                  type="text"
+                  id="displayn"
+                  name="displayn"
+                  placeholder="Enter your display name"
+                />
+                <label for="customurl">Custom url</label>
+                <input
+                  type="text"
+                  id="customurl"
+                  name="customurl"
+                  placeholder=" ui8.net/Your custom URL"
+                />
+                <label for="bio">Bio</label>
+                <input
+                  type="text"
+                  id="bio"
+                  name="bio"
+                  placeholder="About yourselt in a few words"
+                />
+              </form>
+            </div>
+            <div class="social">
+              <h2 class="social__title edit_form_title">Social</h2>
+              <form action="" class="social__forms">
+                <label for="portfolio">portfolio or website</label>
+                <input
+                  type="text"
+                  id="portfolio"
+                  name="portfolio"
+                  placeholder="Enter URL"
+                />
+                <label for="twitter">twitter</label>
+                <input
+                  type="text"
+                  id="twitter"
+                  name="twitter"
+                  placeholder="@twitter username"
+                  value=""
+                  class="twitter_inp">  <a href="#" class="verify">Verify account</a> 
+
+              </form>
+              <input type="button" value="Add more social account" class="addmore"/>
+              <p class="social__text">
+                To update your settings you should sign message through your
+                wallet. Click 'Update profile' then sign the message
+              </p>
+            </div>
+            <div class="edit_form__account__btns">
+              <a href="#" class="update">Update Profile</a>
+              <a href="#" class="clear">Clear all</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_top">
+          <div class="footer_top__info_col">
+            <img src="/icons/homePage/logo.svg" alt="" class="logo">
+            <h2 class="footer_top__info_col__title main_title">The New Creative
+              <br> Economy.</h2>
+            <ul class="footer_top__info_col__menu">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="footer_top__info_col">
+            <h2 class="footer_top__info_col__title">Crypter.</h2>
+            <ul class="footer_top__info_col__menu">
+              <li>Discover</li>
+              <li>Connect wallet</li>
+              <li>Create item</li>
+            </ul>
+          </div>
+          <div class="footer_top__info_col"><h2 class="footer_top__info_col__title">Info</h2>
+            <ul class="footer_top__info_col__menu">
+              
+              <li>Download</li>
+              <li>Demos</li>
+              <li>Support</li>
+            </ul></div>
+          <div class="footer_top__info_col footer_email_block"><h2 class="footer_top__info_col__title">Join Newsletter</h2>
+            <h2 class="footer_top__info_col__title footer_subscribe">Subscribe our newsletter to get more free design course and resource</h2>
+            <input type="text" class="footer_top__info_col__inp" value="Enter your email">
+          </div>
+        </div>
+        <div class="footer_bottom">
+        <h2 class="footer_bottom__text ">Copyright © 2021 UI8 LLC. All rights reserved</h2>
+        <h2 class="footer_bottom__text footer__text__right">We use cookies for better service.
+          <span class="footer_bottom__text__accept">Accept</span>
+        </h2>
+        </div>
+      </div>
+          </footer>
+  </body>
+</html>

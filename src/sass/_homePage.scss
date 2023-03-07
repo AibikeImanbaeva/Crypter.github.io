@@ -71,11 +71,12 @@ header {
         font-weight: 700;
         font-size: 14px;
         text-decoration: none;
-        color: $black-color;
-      }
-      .link__grey {
         color: $grey-color;
+        &:hover{
+          color: #23262f;
+        }
       }
+     
     }
   }
   .header__items {
