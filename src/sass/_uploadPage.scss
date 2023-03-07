@@ -32,27 +32,38 @@
     @include grey_border_btn;
     width: 153px;
     height: 40px;
-    padding: 8px 16px 12px 40px;
+    // padding: 8px 16px 12px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: "DM Sans";
     font-weight: 700;
     font-size: 14px;
     color: #23262f;
-    background: url(/icons/uploadPage/arrowleft.svg) no-repeat 12% 46%;
+    background: url(/icons/uploadPage/arrowleft.svg) no-repeat 8% 46%;
+   
   }
   &__btns {
     display: flex;
     justify-content: space-between;
     width: 17%;
+   
     &__home {
       @include grey_400_subtitle;
       font-weight: 700;
       font-size: 0.85rem;
+      &:hover{
+        color: #23262f;
+      }
     }
     &__uploadItem {
       @include grey_400_subtitle;
       font-weight: 700;
       font-size: 0.85rem;
-      color: $black-color;
+    
+      &:hover{
+        color: #23262f;
+      }
     }
   }
 }

@@ -96,11 +96,40 @@
 .user_content{
   width: 72%;
   min-height: 746px;
-  padding-top: 180px;
+  padding-top: 57px;
   margin-bottom: 2rem;
+ 
   @include navbar_menu;
 
+ &__edits{
  
+  margin-bottom: 130px;
+
+  display: flex;
+  justify-content: end;
+ 
+  &__photo{
+    @include grey_border_btn;
+    height: 40px;
+    background: rgb(0,0,0,0);
+    color: #fcfcfd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin-right: 15px;
+  }
+  &__profile{
+    @include grey_border_btn;
+    height: 40px;
+    background: rgb(0,0,0,0);
+    color: #fcfcfd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+  }
+ }
   .user_cards{
     margin-top: 2rem;
     display: flex;
