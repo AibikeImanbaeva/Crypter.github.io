@@ -1,8 +1,9 @@
 .userpage {
   min-height: 1038px;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 213px;
+
+  padding-top: 303px;
+  background: url("../img/userPage/bg.jpg") no-repeat ;
+  background-size: 100%;
   .profile {
     height: 689px;
     width: 23%;
@@ -111,4 +112,11 @@
 
 .discover_content .crypt-card__users .hot-bid__title{
   font-size: 0.8rem;
+}
+
+
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  
 }
