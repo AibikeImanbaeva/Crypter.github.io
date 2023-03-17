@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crypter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body>
@@ -12,18 +13,23 @@
       <div class="container">
         <header>
           <!-- <div class="container"> -->
-          <nav class="header__nav">
+            
+            <nav class="header__nav">
             <div class="header__nav__logo">
               <img
-                src="/icons/homePage/logo.svg"
-                alt="logo"
-                class="header__nav__logo__img"
+              src="/icons/homePage/logo.svg"
+              alt="logo"
+              class="header__nav__logo__img"
               />
             
               
             </div>
             <div class="line"></div>
+            <label for="hamburger" class="ham_label">&#9776;</label>
+            <input type="checkbox" id="hamburger" />
+          <div class="header__nav__menu__wrapper">
             <ul class="header__nav__menu">
+             
               <li><a href="#" class="header__nav__menu__link">Discover</a></li>
               <li>
                 <a href="/getstartPage.html" class="header__nav__menu__link link__grey"
@@ -31,8 +37,11 @@
                 >
               </li>
             </ul>
+
+          </div>
           </nav>
 
+      
           <div class="header__items">
             <input
               type="search"
@@ -82,6 +91,7 @@
         </div>
         <div class="about_result">
           <div class="about__result__title">the creator network®</div>
+          <div class="marco">Marco carrillo®</div>
           <div class="about__result__creator">
             <div class="creator__bio">
               <div class="creator__bio__img">
@@ -147,14 +157,14 @@
           <div class="future__posts__main_post">
             <img
               srcset="
-              /img/homePage/future_main_tab.jpg 430w
-              /img/homePage/future_main_mob.jpg  320w
+              /img/homePage/future_main-430.jpg 430w,
+              /img/homePage/future_main-320.jpg  320w
             "
               sizes="
-            (max-width: 1024px) 427px,
-            (max-width:375px) 320px
+            (max-width: 1120px) 427px,
+            (max-width: 375px) 320px
             "
-              src="/img/homePage/future_main_deks.jpg"
+              src="/img/homePage/future_main.jpg"
               alt="nft-pic"
               class="future__posts__main_post__pic"
             />
@@ -289,14 +299,14 @@
               </div>
             </div>
             <div class="future__posts__creators__users">
-              <div class="creator__bio">
+              <div class="creator__bio hide">
                 <div class="creator__bio__img">
                   <img
                     src="/img/homePage/future_section/03.jpg"
                     alt="user"
                   />
                 </div>
-                <div class="creator__bio__inf">
+                <div class="creator__bio__inf ">
                   <h2 class="creator__bio__inf__desc">Payton Harris</h2>
                   <h2 class="creator__bio__inf__info">
                     2.456 <span> ETH </span>
@@ -305,7 +315,7 @@
               </div>
             </div>
             <div class="future__posts__creators__users">
-              <div class="creator__bio">
+              <div class="creator__bio hide">
                 <div class="creator__bio__img">
                   <img
                     src="/img/homePage/future_section/04.png"
@@ -396,7 +406,7 @@
             </div>
           </div>
           <!-- ----------------------------------------------- -->
-          <div class="sellers_content__cards">
+          <div class="sellers_content__cards sellers_content__cards__hide">
             <div class="sellers_content__cards__top">
               <img
                 src="/img/homePage/sellers_section/badge02.png"
@@ -577,7 +587,7 @@
               </div>
             </div>
           </div>
-          <div class="hot_bid__content__card crypt_card" >
+          <div class="hot_bid__content__card crypt_card hide" >
             <img src="/img/homePage/hot_bid_section/2.png" alt="" class="hot_bid__content__card__img" />
             <div class="hot_bid__content__card__desc">
              <a href="#">Amazing digital art</a> 
@@ -598,7 +608,7 @@
           
           </div>
           </div>
-          <div class="hot_bid__content__card crypt_card">
+          <div class="hot_bid__content__card crypt_card hide">
             <img src="/img/homePage/hot_bid_section/02.png" alt="" class="hot_bid__content__card__img" />
             <div class="hot_bid__content__card__desc">
           <a href="#">Amazing digital art</a>    
@@ -616,7 +626,7 @@
               New bid 🔥
             </div></div>
           </div>
-          <div class="hot_bid__content__card crypt_card">
+          <div class="hot_bid__content__card crypt_card_last hide">
             <img src="/img/homePage/hot_bid_section/03.png" alt="" class="hot_bid__content__card__img" />
            
               <div class="hot_bid__content__card__desc">
@@ -648,10 +658,10 @@
       <div class="hot_collections_content">
         <div class="hot_collections_content__cards">
           <div class="hot_collections_content__cards__img">
-    <img src="/img/homePage/hot__collections/01.jpg" alt="" class="hot_collections_content__cards__img_first">
-    <img src="/img/homePage/hot__collections/02.jpg" alt="" class="hot_collections_content__cards__img_first">
-    <img src="/img/homePage/hot__collections/03.jpg" alt="" class="hot_collections_content__cards__img_first">
-    <img src="/img/homePage/hot__collections/04.jpg" alt="" class="hot_collections_content__cards__img_first">
+    <img src="/img/homePage/hot__collections/01.jpg" alt="" class="hot_collections_content__cards__img_first ">
+    <img src="/img/homePage/hot__collections/02.jpg" alt="" class="hot_collections_content__cards__img_first mini">
+    <img src="/img/homePage/hot__collections/03.jpg" alt="" class="hot_collections_content__cards__img_first mini">
+    <img src="/img/homePage/hot__collections/04.jpg" alt="" class="hot_collections_content__cards__img_first mini">
           </div>
           <div class="hot_collections_content__cards__footer">
             <div class="hot_collections_content__cards__footer__title">Awesome collection</div>
@@ -671,9 +681,9 @@
         <div class="hot_collections_content__cards">
           <div class="hot_collections_content__cards__img">
             <img src="/img/homePage/hot__collections/05.jpg" alt="" class="hot_collections_content__cards__img_first">
-            <img src="/img/homePage/hot__collections/06.jpg" alt="" class="hot_collections_content__cards__img_first">
-            <img src="/img/homePage/hot__collections/07.jpg" alt="" class="hot_collections_content__cards__img_first">
-            <img src="/img/homePage/hot__collections/08.jpg" alt="" class="hot_collections_content__cards__img_first">
+            <img src="/img/homePage/hot__collections/06.jpg" alt="" class="hot_collections_content__cards__img_first mini">
+            <img src="/img/homePage/hot__collections/07.jpg" alt="" class="hot_collections_content__cards__img_first mini ">
+            <img src="/img/homePage/hot__collections/08.jpg" alt="" class="hot_collections_content__cards__img_first mini">
           </div>
           <div class="hot_collections_content__cards__footer"> <div class="hot_collections_content__cards__footer__title">Awesome collection</div>
           <div class="hot_collections_content__cards__footer__desc">
@@ -687,12 +697,12 @@
 </a>
           </div></div>
         </div>
-        <div class="hot_collections_content__cards">
+        <div class="hot_collections_content__cards hot_collections_content__cards__last">
           <div class="hot_collections_content__cards__img">
             <img src="/img/homePage/hot__collections/09.jpg" alt="" class="hot_collections_content__cards__img_first">
-            <img src="/img/homePage/hot__collections/10.jpg" alt="" class="hot_collections_content__cards__img_first">
-            <img src="/img/homePage/hot__collections/11.jpg" alt="" class="hot_collections_content__cards__img_first">
-            <img src="/img/homePage/hot__collections/12.jpg" alt="" class="hot_collections_content__cards__img_first">
+            <img src="/img/homePage/hot__collections/10.jpg" alt="" class="hot_collections_content__cards__img_first mini">
+            <img src="/img/homePage/hot__collections/11.jpg" alt="" class="hot_collections_content__cards__img_first mini">
+            <img src="/img/homePage/hot__collections/12.jpg" alt="" class="hot_collections_content__cards__img_first mini">
           </div>
           <div class="hot_collections_content__cards__footer"> <div class="hot_collections_content__cards__footer__title">Awesome collection</div>
           <div class="hot_collections_content__cards__footer__desc">
@@ -717,13 +727,21 @@
     </section>
 
     <section class="discover">
-      <div class="container">
+    <div class="container">
         <div class="discover_title">
           Discover
         </div>
         <div class="discover_navbar">
           <div class="discover_navbar__data">
             <h2>Recently added</h2>
+            <img
+              src="/img/homePage/sellers_section/small.svg"
+              alt=""
+              class="sellers_header__data__img"
+            />
+          </div>
+          <div class="discover_navbar__data hide">
+            <h2>All items</h2>
             <img
               src="/img/homePage/sellers_section/small.svg"
               alt=""
@@ -764,9 +782,9 @@
                 class="sellers_header__data__img"
               /></div>
           </div>
-          <div class="discover_digitals__items">
+          <div class="discover_digitals__items hide">
             <div class="discover_digitals__items__top">Creator</div>
-            <div class="discover_digitals__items__content"> <h2>Verified only</h2>
+            <div class="discover_digitals__items__content "> <h2>Verified only</h2>
               <img
                 src="/img/homePage/sellers_section/small.svg"
                 alt=""
@@ -793,7 +811,7 @@
           </div>
         </div>
         <div class="discover_content">
-          <div class="discover_content__card crypt-card">
+          <div class="discover_content__card crypt-card hide">
             <img src="/img/homePage/discover/01.jpg" alt="" class="crypt-card__img" />
             <div class="crypt-card__desc">
               Amazing digital art
@@ -812,7 +830,7 @@
               </div>
             
           </div></div>
-          <div class="discover_content__card crypt-card"> <img src="/img/homePage/discover/02-08.jpg" alt="" class="crypt-card__img" />
+          <div class="discover_content__card crypt-card hide"> <img src="/img/homePage/discover/02-08.jpg" alt="" class="crypt-card__img" />
             <div class="crypt-card__desc">
               Amazing digital art
               <input type="button" class="grey-input"value="2.45 ETH">
@@ -830,7 +848,7 @@
               </div>
             
           </div></div>
-          <div class="discover_content__card crypt-card"> <img src="/img/homePage/discover/03.jpg" alt="" class="crypt-card__img" />
+          <div class="discover_content__card crypt-card hide"> <img src="/img/homePage/discover/03.jpg" alt="" class="crypt-card__img" />
             <div class="crypt-card__desc">
               Amazing digital art
               <input type="button" class="grey-input"value="2.45 ETH">
@@ -848,7 +866,7 @@
               </div>
             
           </div></div>
-          <div class="discover_content__card crypt-card"> <img src="/img/homePage/discover/04.jpg" alt="" class="crypt-card__img" />
+          <div class="discover_content__card crypt-card "> <img src="/img/homePage/discover/04.jpg" alt="" class="crypt-card__img" />
             <div class="crypt-card__desc">
               Amazing digital art
               <input type="button" class="grey-input"value="2.45 ETH">
@@ -866,7 +884,7 @@
               </div>
             
           </div></div>
-          <div class="discover_content__card crypt-card"> <img src="/img/homePage/discover/6.jpg" alt="" class="crypt-card__img" />
+          <div class="discover_content__card crypt-card hide"> <img src="/img/homePage/discover/6.jpg" alt="" class="crypt-card__img" />
             <div class="crypt-card__desc">
               Amazing digital art
               <input type="button" class="grey-input"value="2.45 ETH">
@@ -884,7 +902,7 @@
               </div>
             
           </div></div>
-          <div class="discover_content__card crypt-card"> <img src="/img/homePage/discover/7.jpg" alt="" class="crypt-card__img" />
+          <div class="discover_content__card crypt-card hide"> <img src="/img/homePage/discover/7.jpg" alt="" class="crypt-card__img" />
             <div class="crypt-card__desc">
               Amazing digital art
               <input type="button" class="grey-input"value="2.45 ETH">
@@ -902,7 +920,7 @@
               </div>
             
           </div></div>
-          <div class="discover_content__card crypt-card"> <img src="/img/homePage/discover/07.jpg" alt="" class="crypt-card__img" />
+          <div class="discover_content__card crypt-card hide"> <img src="/img/homePage/discover/07.jpg" alt="" class="crypt-card__img" />
             <div class="crypt-card__desc">
               Amazing digital art
               <input type="button" class="grey-input"value="2.45 ETH">
@@ -920,7 +938,7 @@
               </div>
             
           </div></div>
-          <div class="discover_content__card crypt-card"> <img src="/img/homePage/discover/02-08.jpg" alt="" class="crypt-card__img" />
+          <div class="discover_content__card crypt-card hide"> <img src="/img/homePage/discover/02-08.jpg" alt="" class="crypt-card__img" />
             <div class="crypt-card__desc">
               Amazing digital art
               <input type="button" class="grey-input"value="2.45 ETH">
@@ -977,31 +995,40 @@
       </ul>
     </div>
     <div class="footer_top__info_col">
-      <h2 class="footer_top__info_col__title">Crypter.</h2>
-      <ul class="footer_top__info_col__menu">
-        <li>Discover</li>
-        <li>Connect wallet</li>
-        <li>Create item</li>
-      </ul>
+      <div class="checkbox__footer">  <h2 class="footer_top__info_col__title">Crypter.</h2>
+     <label for="arrow" class="arrow_label"></label>
+        <input type="checkbox" class="arrow_footer" id="arrow">
+        <ul class="footer_top__info_col__menu">
+          <li>Discover</li>
+          <li>Connect wallet</li>
+          <li>Create item</li>
+        </ul></div>
+    
+    
     </div>
-    <div class="footer_top__info_col"><h2 class="footer_top__info_col__title">Info</h2>
-      <ul class="footer_top__info_col__menu">
+    <div class="footer_top__info_col">
+      <div class="checkbox__footer">  <h2 class="footer_top__info_col__title">Crypter.</h2>
+        <label for="arrow_sec" class="arrow_label"></label>
+           <input type="checkbox" class="arrow_footer" id="arrow_sec">
+           <ul class="footer_top__info_col__menu">
+            <li>Download</li>
+            <li>Demos</li>
+            <li>Support</li>
+           </ul></div>
         
-        <li>Download</li>
-        <li>Demos</li>
-        <li>Support</li>
-      </ul></div>
-    <div class="footer_top__info_col footer_email_block"><h2 class="footer_top__info_col__title">Join Newsletter</h2>
-      <h2 class="footer_top__info_col__title footer_subscribe">Subscribe our newsletter to get more free design course and resource</h2>
-      <input type="text" class="footer_top__info_col__inp" value="Enter your email">
-    </div>
-  </div>
-  <div class="footer_bottom">
-  <h2 class="footer_bottom__text ">Copyright © 2021 UI8 LLC. All rights reserved</h2>
-  <h2 class="footer_bottom__text footer__text__right">We use cookies for better service.
-    <span class="footer_bottom__text__accept">Accept</span>
-  </h2>
-  </div>
+        
+      
+          </div>
+          <div class="footer_top__info_col footer_email_block"><h2 class="footer_top__info_col__title">Join Newsletter</h2>
+            <h2 class="footer_top__info_col__title footer_subscribe">Subscribe our newsletter to get more free design course and resource</h2>
+            <input type="text" class="footer_top__info_col__inp" value="Enter your email">
+          </div>
+        </div>
+<div class="footer_bottom">
+<h2 class="footer_bottom__text ">Copyright © 2021 UI8 LLC. All rights reserved</h2>
+<h2 class="footer_bottom__text footer__text__right">We use cookies for better service.
+  <span class="footer_bottom__text__accept">Accept</span>
+</h2>
 </div>
     </footer>
 

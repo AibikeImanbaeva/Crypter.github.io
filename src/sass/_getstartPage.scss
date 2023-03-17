@@ -49,8 +49,9 @@
           display: flex;
           flex-direction: column;
 
-          label {
+          .get_start_arrow {
             @include black_subtitle;
+            display: block;
             background: url("../icons/getstart-section/Line.svg") no-repeat 99%;
           }
           input {
