@@ -129,6 +129,9 @@ header {
   &__bell {
     width: 44px;
     margin-right: 24px;
+    &:hover{
+      cursor: pointer;
+    }
   }
   &__search {
     border: 2px solid #e6e8ec;
@@ -170,9 +173,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    &:hover{
+      cursor: pointer;
+    }
     @media all and (max-width: 1020px) {
       font-size: 0.7rem;
     }
+    
   }
   .header_upload__wallet {
     display: flex;
@@ -1399,6 +1406,9 @@ margin-top: -11px;
         align-items: center;
         padding-left: 10px;
         background: url("/icons/footer/arroww.svg") no-repeat 97% 50%;
+        @media screen and (max-width:740px) {
+          font-size: .8rem
+        }
       }
     }
   }
@@ -1490,6 +1500,7 @@ width: 21%;
     display: block;
    margin-left: 75%;
     position: fixed;
+    z-index: 2;
   }
 }
 

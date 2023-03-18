@@ -74,6 +74,9 @@ line-height: 3rem;
             @include black_subtitle;
             display: block;
             background: url("../icons/getstart-section/Line.svg") no-repeat 99%;
+            &:hover{
+              cursor: pointer;
+            }
           }
           input {
             // width: 100%;

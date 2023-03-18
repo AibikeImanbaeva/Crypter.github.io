@@ -10,25 +10,32 @@
   </head>
   <body>
     <div class="container">
-      <header>
+      <header class="get_start_header">
         <!-- <div class="container"> -->
-        <nav class="header__nav">
+        <nav class="header__nav get_start_nav">
           <div class="header__nav__logo">
-            <img
+            <a href="./index.html"> <img
               src="/icons/homePage/logo.svg"
               alt="logo"
               class="header__nav__logo__img"
-            />
+            /></a>
+           
           </div>
           <div class="line"></div>
-          <ul class="header__nav__menu">
-            <li><a href="#" class="header__nav__menu__link">Discover</a></li>
-            <li>
-              <a href="#" class="header__nav__menu__link link__grey"
-                >How it work</a
-              >
-            </li>
-          </ul>
+<label for="hamburger" class="ham_label">&#9776;</label>
+<input type="checkbox" id="hamburger" />
+<div class="header__nav__menu__wrapper">
+<ul class="header__nav__menu">
+ 
+  <li><a href="#" class="header__nav__menu__link">Discover</a></li>
+  <li>
+    <a href="/getstartPage.html" class="header__nav__menu__link link__grey"
+      >How it work</a
+    >
+  </li>
+</ul>
+
+</div>
         </nav>
 
         <div class="header__items">
@@ -37,7 +44,7 @@
             class="header__items__search"
             placeholder="Search"
           />
-          <div class="header__items__bell">
+          <div class="header__items__bell get_start_bells">
             <img src="/icons/homePage/bell.svg" alt="bell" />
           </div>
           <a href="/upload.html" class="header__items__upload">Upload</a>
@@ -45,13 +52,17 @@
           <a href="/userPage.html" class="header_upload__wallet"
             >7.00698 <span class="upload_price"> ETH </span>
           </a>
+          <a href="/userPage.html" class="header_upload__wallet_hide"
+          ><img src="/img/uploadPage/01.png" alt="">
+        </a>
           <!-- <input
-                type="submit"
-                class="header__items__connect"
-                value="Connect Wallet"
-              /> -->
+                  type="submit"
+                  class="header__items__connect"
+                  value="Connect Wallet"
+                /> -->
         </div>
         <!-- </div> -->
+      
       </header>
     </div>
     <div class="line"></div>
@@ -148,6 +159,10 @@ of at least 400x400.Gifs work too 🙌
                 To update your settings you should sign message through your
                 wallet. Click 'Update profile' then sign the message
               </p>
+            </div>
+            <div class="social__text_hide">
+              To update your settings you should sign message through your
+              wallet. Click 'Update profile' then sign the message
             </div>
             <div class="edit_form__account__btns">
               <a href="#" class="update">Update Profile</a>
