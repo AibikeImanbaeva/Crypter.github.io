@@ -1,3 +1,9 @@
+
+.get_start_menu{
+
+  display: none !important
+}
+
 .header_upload__wallet {
   background: url(/img/uploadPage/01.png) no-repeat 2%;
   @include grey_border_btn;
@@ -6,8 +12,16 @@
   font-size: 0.8rem;
   padding-left: 39px;
   padding-top: 10px;
+ 
   .upload_price {
     color: #45b26b;
+  }
+}
+.header_upload__wallet_hide{
+  display: none;
+  @media all and (max-width:750px) {
+    display: block;
+
   }
 }
 
@@ -46,7 +60,10 @@
   &__btns {
     display: flex;
     justify-content: space-between;
-    width: 17%;
+    width: 11rem;
+    @media all and (max-width:465px) {
+display: none;      
+    }
    
     &__home {
       @include grey_400_subtitle;
@@ -77,10 +94,14 @@
   }
   &__text {
     @include grey_400_subtitle;
-    width: 65%;
+    width: 22rem;
     margin: 0 auto;
     margin-top: 1rem;
     text-align: center;
+    @media all and (max-width:950px) {
+      font-size: 1.4rem;
+margin-top: 2rem;
+    }
     span {
       color: $black-color;
     }
@@ -91,33 +112,127 @@
     width: 65%;
     margin: 0 auto;
     margin-top: 80px;
+    @media all and (max-width:1470px) {
+      width: 75%;
+    }
+    @media all and (max-width:1230px) {
+      width: 85%;
+    }
+    @media all and (max-width:1100px) {
+      width: 100%;
+    }
+    @media all and (max-width:925px) {
+      flex-direction: column;
+      row-gap: 2rem;
+      align-items: center;
+    }
+
 
     &__post {
       display: flex;
       flex-direction: column;
-      width: 352px;
+      align-items: center;
+      justify-content: space-between;
+      width: 21rem;
       height: 360px;
       border: 1px solid #e6e8ec;
       border-radius: 16px;
       padding: 1rem 1rem 1.5rem 1rem;
+      @media all and (max-width:925px) {
+        // width: 60%;
+      }
+      @media all and (max-width:800px) {
+        // width: 70%;
+      }
+      @media all and (max-width:403px) {
+      display: none;
+      }
       .upload_post__btn {
         @include grey_border_btn;
         width: 7.6rem;
         height: 40px;
-        margin: 0 auto;
-        margin-top: 1.5rem;
-       text-align: center;
-       padding-top: 3%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
       }
       .upload_multiple_btn{
         background: #3772FF;
         color: #fcfcfd;
       }
     }
+    &__post_mob{
+      display: none;
+      
+      @media all and (max-width:403px) {
+        display: block;
+        @include black_subtitle;
+      display: flex;
+      justify-content: space-between;
+      width: 95%;
+      height: 73px;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #E6E8EC;
+      padding-left: 5rem;
+    padding-top: 1rem;
+      background: url('../img/get_start/2.jpg') no-repeat;
+        }
+        .arrow{
+          rotate: 270deg;
+          margin-top: -30px;
+        }
+    }
+    .upload_card_sec {
+      background: url('../img/get_start/1.jpg') no-repeat;
+    }
   }
   &__desc{
     margin-top: 2rem;
     @include grey_400_subtitle;
     text-align: center;
+    @media all and (max-width:950px) {
+      font-size: 1rem;
+
+    }
   }
 }
+
+
+@media all and (max-width:800px) {
+  .get_start_header{
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 0;
+    align-items:center;
+  }
+  .header_upload__wallet{
+    display: none !important
+  }
+  .header_upload__wallet_hide{
+    display: block;
+  }
+  .header__nav__menu{
+    display: none;
+  }
+  .get_start_menu{
+     margin-left: -25%  !important
+  }
+  .get_start_nav{
+    display: flex;
+    width: 8rem;
+   
+  }
+  .header__items{
+display: flex;
+width: 60%;
+.header__items__search{
+  display: none;
+}
+.header__items__upload{
+  display: none;
+}
+  }
+  
+}
+
+
+
