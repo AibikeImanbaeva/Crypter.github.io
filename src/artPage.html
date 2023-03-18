@@ -10,9 +10,9 @@
   </head>
   <body>
     <div class="container">
-      <header>
+      <header class="get_start_header">
         <!-- <div class="container"> -->
-        <nav class="header__nav">
+        <nav class="header__nav get_start_nav">
           <div class="header__nav__logo">
             <img
               src="/icons/homePage/logo.svg"
@@ -21,16 +21,20 @@
             />
           </div>
           <div class="line"></div>
-          <ul class="header__nav__menu">
-            <li><a href="#" class="header__nav__menu__link">Discover</a></li>
-            <li>
-              <a
-                href="/getstartPage.html"
-                class="header__nav__menu__link link__grey"
-                >How it work</a
-              >
-            </li>
-          </ul>
+<label for="hamburger" class="ham_label">&#9776;</label>
+<input type="checkbox" id="hamburger" />
+<div class="header__nav__menu__wrapper">
+<ul class="header__nav__menu">
+ 
+  <li><a href="#" class="header__nav__menu__link">Discover</a></li>
+  <li>
+    <a href="/getstartPage.html" class="header__nav__menu__link link__grey"
+      >How it work</a
+    >
+  </li>
+</ul>
+
+</div>
         </nav>
 
         <div class="header__items">
@@ -39,21 +43,25 @@
             class="header__items__search"
             placeholder="Search"
           />
-          <div class="header__items__bell">
+          <div class="header__items__bell get_start_bells">
             <img src="/icons/homePage/bell.svg" alt="bell" />
           </div>
           <a href="/upload.html" class="header__items__upload">Upload</a>
           <!-- <input type="submit" class="header__items__upload" value="Upload" /> -->
-          <a href="/walletPage.html" class="header__items__connect"
-            >Connect Wallet</a
-          >
+          <a href="/userPage.html" class="header_upload__wallet"
+            >7.00698 <span class="upload_price"> ETH </span>
+          </a>
+          <a href="/userPage.html" class="header_upload__wallet_hide"
+          ><img src="/img/uploadPage/01.png" alt="">
+        </a>
           <!-- <input
-            type="submit"
-            class="header__items__connect"
-            value="Connect Wallet"
-          /> -->
+                  type="submit"
+                  class="header__items__connect"
+                  value="Connect Wallet"
+                /> -->
         </div>
         <!-- </div> -->
+      
       </header>
     </div>
     <section class="art">
@@ -151,12 +159,12 @@
         </div>
       </div>
       <div class="art__imports">
-        <a href="#" class="art__imports__btns">
+        <a href="#" class="art__imports__btns hide">
           <img src="./icons/artPage/close.svg" alt="">
         </a>
-        <a href="#" class="art__imports__btns">  <img src="./icons/artPage/import.svg" alt=""></a>
-        <a href="#" class="art__imports__btns">  <img src="./icons/artPage/heart.svg" alt=""></a>
-        <a href="#" class="art__imports__btns">  <img src="./icons/artPage/more.svg" alt=""></a>
+        <a href="#" class="art__imports__btns ">  <img src="./icons/artPage/import.svg" alt=""></a>
+        <a href="#" class="art__imports__btns ">  <img src="./icons/artPage/heart.svg" alt=""></a>
+        <a href="#" class="art__imports__btns ">  <img src="./icons/artPage/more.svg" alt=""></a>
       </div>
     </section>
     <footer class="footer">
