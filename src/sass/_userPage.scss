@@ -1,16 +1,27 @@
 .userpage {
   min-height: 1038px;
 
-  padding-top: 303px;
+  padding-top: 17%;
   background: url("../img/userPage/bg.jpg") no-repeat ;
   background-size: 100%;
+  @media all and (max-width:1200px) {
+    background-size: 106%;
+  }
+  @media all and (max-width:985px) {
+    padding-top: 18%;
+    background-size: 115%;
+  }
   .profile {
     height: 745px;
-    width: 23%;
+    width: 16rem;
     border: 1px solid #e6e8ec;
     box-shadow: 0px 40px 32px -24px rgba(15, 15, 15, 0.12);
     border-radius: 16px;
     background: #fcfcfd;
+    @media all and (max-width:985px) {
+      width: 20rem;
+   
+    }
     &_card {
       display: flex;
       flex-direction: column;
@@ -94,19 +105,29 @@
    
   }
 .user_content{
-  width: 72%;
+  width: 60%;
   min-height: 746px;
-  padding-top: 57px;
+  padding-top: 1rem;
   margin-bottom: 2rem;
- 
+ @media all and (max-width:985px) {
+  width: 100%;
+ }
   @include navbar_menu;
+.user_content_navbar__menu{
+  width: 22rem;
+  margin-top: 5rem;
+
+}
 
  &__edits{
  
-  margin-bottom: 130px;
+
 
   display: flex;
   justify-content: end;
+  @media all and (max-width:985px) {
+  display: none;
+  }
  
   &__photo{
     @include grey_border_btn;
@@ -116,7 +137,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20%;
+    width: 11rem;
     margin-right: 15px;
   }
   &__profile{
@@ -127,7 +148,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15%;
+    width: 11rem;
+   
   }
  }
   .user_cards{
@@ -147,5 +169,74 @@
 .wrapper{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  @media all and (max-width:985px) {
+    justify-content: center;
+    flex-direction: column;
+    row-gap:1rem;
+    align-items: center;
+  }
   
 }
+
+.btn_hide{
+  display: none !important;
+  @media all and (max-width:985px) {
+    display: flex !important;
+    justify-content: center !important;
+  }
+}
+@media all and (max-width:1300px) {
+.user_cards {
+  display: grid !important;
+  grid-template-columns: repeat(2,1fr);
+  row-gap: 4rem;
+}  
+
+}
+
+@media all and (max-width:697px) {
+  .user_cards {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+    margin: 2rem auto !important;
+    .crypt-card__footer, .crypt-card__users, .crypt-card__desc{
+      width: 15rem;
+    }
+  }  
+
+  .user_cards .discover_content{
+    margin: 0;
+   
+  }
+  
+  }
+
+  @media all and (max-width:697px) {
+    .crypt-card{
+      width: 100%;
+      align-items: center;
+    }  
+    .btn_hide{
+      width: 18rem;
+    }
+    
+    }
+
+     @media all and (max-width:697px){
+      .userpage{
+        background-size: 155%;
+      }
+      .btn_hide{
+        width: 15rem;
+     .user_content__edits__photo, .user_content__edits__profile{
+      font-size: .7rem;
+     }
+      }
+      .user_content_navbar__menu  ul{
+        flex-wrap: wrap;
+        row-gap: 1rem;
+      }
+      
+     }
