@@ -881,11 +881,11 @@ header {
 }
 
 @media all and (max-width: 1020px) {
-  .crypt_card_last,
-  .hot_collections_content__cards__last,
-  .hide {
-    display: none;
-  }
+  // .crypt_card_last,
+  // .hot_collections_content__cards__last,
+  // .hide {
+  //   display: none;
+  // }
 }
 .hot_collections {
   min-height: 789px;
@@ -1509,3 +1509,5 @@ width: 21%;
   }
 
 }
+
+
