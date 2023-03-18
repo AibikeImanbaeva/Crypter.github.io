@@ -10,9 +10,9 @@
   </head>
   <body>
     <div class="container">
-      <header>
+      <header class="get_start_header">
         <!-- <div class="container"> -->
-        <nav class="header__nav">
+        <nav class="header__nav get_start_nav">
           <div class="header__nav__logo">
             <img
               src="/icons/homePage/logo.svg"
@@ -21,14 +21,20 @@
             />
           </div>
           <div class="line"></div>
-          <ul class="header__nav__menu">
-            <li><a href="#" class="header__nav__menu__link">Discover</a></li>
-            <li>
-              <a href="#" class="header__nav__menu__link link__grey"
-                >How it work</a
-              >
-            </li>
-          </ul>
+<label for="hamburger" class="ham_label">&#9776;</label>
+<input type="checkbox" id="hamburger" />
+<div class="header__nav__menu__wrapper">
+<ul class="header__nav__menu">
+ 
+  <li><a href="#" class="header__nav__menu__link">Discover</a></li>
+  <li>
+    <a href="/getstartPage.html" class="header__nav__menu__link link__grey"
+      >How it work</a
+    >
+  </li>
+</ul>
+
+</div>
         </nav>
 
         <div class="header__items">
@@ -37,7 +43,7 @@
             class="header__items__search"
             placeholder="Search"
           />
-          <div class="header__items__bell">
+          <div class="header__items__bell get_start_bells">
             <img src="/icons/homePage/bell.svg" alt="bell" />
           </div>
           <a href="/upload.html" class="header__items__upload">Upload</a>
@@ -45,6 +51,9 @@
           <a href="/userPage.html" class="header_upload__wallet"
             >7.00698 <span class="upload_price"> ETH </span>
           </a>
+          <a href="/userPage.html" class="header_upload__wallet_hide"
+          ><img src="/img/uploadPage/01.png" alt="">
+        </a>
           <!-- <input
                   type="submit"
                   class="header__items__connect"
@@ -52,13 +61,16 @@
                 /> -->
         </div>
         <!-- </div> -->
+      
       </header>
     </div>
 
     <section class="userpage">
           <div class="container">
             <div class="wrapper">
-
+              <div class="user_content__edits btn_hide">
+                <a href="#" class="user_content__edits__photo">Edit cover photo</a>
+                <a href="./editprofile.html" class="user_content__edits__profile">Edit profile</a></div>
             
         <div class="profile">
           <div class="profile_card">
@@ -173,46 +185,55 @@
     </div>
     </div>
     </section>
-      <footer class="footer">
-        <div class="container">
-          <div class="footer_top">
-            <div class="footer_top__info_col">
-              <img src="/icons/homePage/logo.svg" alt="" class="logo">
-              <h2 class="footer_top__info_col__title main_title">The New Creative
-                <br> Economy.</h2>
-              <ul class="footer_top__info_col__menu">
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </div>
-            <div class="footer_top__info_col">
-              <h2 class="footer_top__info_col__title">Crypter.</h2>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_top">
+          <div class="footer_top__info_col">
+            <img src="/icons/homePage/logo.svg" alt="" class="logo">
+            <h2 class="footer_top__info_col__title main_title">The New Creative
+              <br> Economy.</h2>
+            <ul class="footer_top__info_col__menu">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="footer_top__info_col">
+            <div class="checkbox__footer">  <h2 class="footer_top__info_col__title">Crypter.</h2>
+           <label for="arrow" class="arrow_label"></label>
+              <input type="checkbox" class="arrow_footer" id="arrow">
               <ul class="footer_top__info_col__menu">
                 <li>Discover</li>
                 <li>Connect wallet</li>
                 <li>Create item</li>
-              </ul>
-            </div>
-            <div class="footer_top__info_col"><h2 class="footer_top__info_col__title">Info</h2>
-              <ul class="footer_top__info_col__menu">
-                
-                <li>Download</li>
-                <li>Demos</li>
-                <li>Support</li>
               </ul></div>
-            <div class="footer_top__info_col footer_email_block"><h2 class="footer_top__info_col__title">Join Newsletter</h2>
-              <h2 class="footer_top__info_col__title footer_subscribe">Subscribe our newsletter to get more free design course and resource</h2>
-              <input type="text" class="footer_top__info_col__inp" value="Enter your email">
-            </div>
+          
+          
           </div>
-          <div class="footer_bottom">
-          <h2 class="footer_bottom__text ">Copyright © 2021 UI8 LLC. All rights reserved</h2>
-          <h2 class="footer_bottom__text footer__text__right">We use cookies for better service.
-            <span class="footer_bottom__text__accept">Accept</span>
-          </h2>
-          </div>
-        </div>
-            </footer>
+          <div class="footer_top__info_col">
+            <div class="checkbox__footer">  <h2 class="footer_top__info_col__title">Crypter.</h2>
+              <label for="arrow_sec" class="arrow_label"></label>
+                 <input type="checkbox" class="arrow_footer" id="arrow_sec">
+                 <ul class="footer_top__info_col__menu">
+                  <li>Download</li>
+                  <li>Demos</li>
+                  <li>Support</li>
+                 </ul></div>
+              
+              
+            
+                </div>
+                <div class="footer_top__info_col footer_email_block"><h2 class="footer_top__info_col__title">Join Newsletter</h2>
+                  <h2 class="footer_top__info_col__title footer_subscribe">Subscribe our newsletter to get more free design course and resource</h2>
+                  <input type="text" class="footer_top__info_col__inp" value="Enter your email">
+                </div>
+              </div>
+      <div class="footer_bottom">
+      <h2 class="footer_bottom__text ">Copyright © 2021 UI8 LLC. All rights reserved</h2>
+      <h2 class="footer_bottom__text footer__text__right">We use cookies for better service.
+        <span class="footer_bottom__text__accept">Accept</span>
+      </h2>
+      </div>
+          </footer>
   </body>
 </html>
