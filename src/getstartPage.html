@@ -11,49 +11,67 @@
   <body>
     <div class="container">
       <header>
-        <nav class="header__nav">
+        <!-- <div class="container"> -->
+          
+          <nav class="header__nav">
           <div class="header__nav__logo">
             <img
-              src="/icons/homePage/logo.svg"
-              alt="logo"
-              class="header__nav__logo__img"
+            src="/icons/homePage/logo.svg"
+            alt="logo"
+            class="header__nav__logo__img"
             />
+          
+            
           </div>
           <div class="line"></div>
+          <label for="hamburger" class="ham_label">&#9776;</label>
+          <input type="checkbox" id="hamburger" />
+        <div class="header__nav__menu__wrapper">
           <ul class="header__nav__menu">
+           
             <li><a href="#" class="header__nav__menu__link">Discover</a></li>
             <li>
-              <a
-                href="/getstartPage.html"
-                class="header__nav__menu__link link__grey"
+              <a href="/getstartPage.html" class="header__nav__menu__link link__grey"
                 >How it work</a
               >
             </li>
           </ul>
+
+        </div>
         </nav>
 
+    
         <div class="header__items">
           <input
             type="search"
             class="header__items__search"
             placeholder="Search"
           />
-          <div class="header__items__bell">
+          <div class="header__items__bell home_bells">
             <img src="/icons/homePage/bell.svg" alt="bell" />
           </div>
-          <a href="/upload.html" class="header__items__upload">Upload</a>
-
-          <a href="/walletPage.html" class="header__items__connect"
-            >Connect Wallet</a
-          >
+        <a href="/upload.html" class="header__items__upload">Upload</a>
+          <!-- <input type="submit" class="header__items__upload" value="Upload" /> -->
+         <a href="/walletPage.html"   class="header__items__connect home_header__items__connect">Connect Wallet</a>
+          <!-- <input
+            type="submit"
+            class="header__items__connect"
+            value="Connect Wallet"
+          /> -->
         </div>
+        <!-- </div> -->
       </header>
     </div>
 
     <section class="get_start">
       <div class="container">
         <h2 class="get_start_subtitle">learn how to get started</h2>
-        <h2 class="get_start_mainTitle">Frequently asked questions</h2>
+        <div class="get_start_mainTitle"> <h2 class="get_start_mainTitle_text"> Frequently asked questions</h2>
+         <br>
+          Join Stacks community now to get free updates and also alot of freebies are 
+          <br>
+          waiting for you or <span class="get_start_mainTitle__blue">Contact Support</span>
+        </div>
 
         <div class="get_start_content">
           <div class="get_start_content__list">
@@ -88,6 +106,40 @@
                 class="get_start__sidebar__img"
               />
               <a href="#">Product</a>
+            </div>
+          </div>
+          <div class="get_start_content__body__blocks get_start_menu_hide">
+            <div class="get_start_blocks__header">
+              <label for="get_start__accord_menu" class="get_start_arrow label_menu_hide">General</label>
+              <input type="checkbox" id="get_start__accord_menu" />
+              <div class="get_start_content__text" id="test">
+                <div class="get_start_content__list__item list_item_menu">
+                  <img
+                    src="/icons/getstart-section/02.svg"
+                    alt=""
+                    class="get_start__sidebar__img"
+                  />
+                  <a href="#">Support</a>
+                </div>
+                <div class="get_start_content__list__item list_item_menu">
+                  <img
+                    src="/icons/getstart-section/03.svg"
+                    alt=""
+                    class="get_start__sidebar__img"
+                  />
+                  <a href="#">Hosting</a>
+                </div>
+                <div class="get_start_content__list__item list_item_menu">
+                  <img
+                    src="/icons/getstart-section/04.svg"
+                    alt=""
+                    class="get_start__sidebar__img"
+                  />
+                  <a href="#">Product</a>
+                </div>
+               
+              
+              </div>
             </div>
           </div>
           <div class="get_start_content__body">
@@ -197,7 +249,7 @@
               </div>
             </div>
           </div>
-          <div class="hot_bid__content__card crypt_card" >
+          <div class="hot_bid__content__card crypt_card hide" >
             <img src="/img/homePage/hot_bid_section/2.png" alt="" class="hot_bid__content__card__img" />
             <div class="hot_bid__content__card__desc">
               Amazing digital art
@@ -218,7 +270,7 @@
           
           </div>
           </div>
-          <div class="hot_bid__content__card crypt_card">
+          <div class="hot_bid__content__card crypt_card hide">
             <img src="/img/homePage/hot_bid_section/02.png" alt="" class="hot_bid__content__card__img" />
             <div class="hot_bid__content__card__desc">
               Amazing digital art
@@ -236,7 +288,7 @@
               New bid 🔥
             </div></div>
           </div>
-          <div class="hot_bid__content__card crypt_card">
+          <div class="hot_bid__content__card crypt_card hide">
             <img src="/img/homePage/hot_bid_section/03.png" alt="" class="hot_bid__content__card__img" />
            
               <div class="hot_bid__content__card__desc">

@@ -60,7 +60,7 @@ header {
 
   column-gap: 32px;
   align-items: center;
-  width: 23rem;
+  width: 20rem;
   grid-template: 1fr 1px 2fr;
   grid-template-columns: 126px 1px auto;
   @media (max-width: 1120px) {
@@ -100,6 +100,7 @@ header {
     }
     list-style-type: none;
     display: grid;
+    width: 10rem;
     grid-template-columns: repeat(2, 1fr);
 
     li a {
@@ -796,7 +797,8 @@ header {
       @include black_title;
     }
     &__transit {
-      width: 8%;
+      width: 6rem;
+    
       &__arrows {
         width: 40px;
         height: 40px;
@@ -805,6 +807,7 @@ header {
           border-radius: 40px;
         }
       }
+      
     }
   }
   &__content {

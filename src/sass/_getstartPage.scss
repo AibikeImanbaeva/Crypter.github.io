@@ -1,5 +1,5 @@
 .get_start {
-  min-height: 1117px;
+  min-height: 700px;
   background: #fcfcfd;
   padding: 80px 0 0 0;
   &_subtitle {
@@ -10,18 +10,35 @@
   }
   &_mainTitle {
     margin-top: 0.7rem;
-    @include black_title;
+    @include grey_400_subtitle;
+    line-height: 1.2rem;
+    color: $black-color;
+    &__blue{
+      color: #3772FF
+    }
+    &_text{
+line-height: 3rem;
+      @include black_title;
+      margin-bottom: .1rem;
+   
+    }
   }
   &_content {
     margin-top: 7.75rem;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 5rem;
+   
     &__list {
       display: flex;
       flex-direction: column;
-      width: 14%;
+      width: 7rem;
       height: 184px;
       justify-content: space-between;
+      @media all and (max-width:450px) {
+        display: none;
+      }
       &__item {
         .get_start__sidebar__img {
           margin-right: 1rem;
@@ -41,6 +58,10 @@
       width: 66%;
       display: flex;
       flex-direction: column;
+
+      @media all and (max-width:560px) {
+        width: 95%;
+      }
       &__blocks {
         .content {
           display: none;
@@ -96,4 +117,24 @@
   height: 1px;
   background-color: #e6e8ec;
   margin-bottom: 2rem;
+}
+
+.get_start_menu_hide{
+  display: none;
+  @media all and ((max-width:450px)) {
+    display: block;
+    width: 20rem;
+    .list_item_menu{
+      height: 4rem;
+    }
+    .label_menu_hide{
+      border: 1px solid #E6E8EC;
+      border-radius: 12px;
+      height: 3rem;
+     padding: 1rem;
+    }
+  }
+  .hide{
+    display: none;
+  }
 }
